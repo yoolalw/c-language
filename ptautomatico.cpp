@@ -33,7 +33,6 @@ int main(void){
                 printf("Escolha uma das opcoes acima\nInsira (1) para Abrir o portao || Insira (2) para fechar o portao: ");
                 scanf("%d", &opcaoAF);
 
-////////////////////////////////// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 			if(opcaoAF == 1){
 	        system ("cls");
