@@ -1,4 +1,4 @@
-/*	Sistema de automatizaçao de portoes
+/*	Sistema de automatizaÃ§ao de portoes
 	Teste;
 	Proprietario : Lara Kemily
 	Equipe:
@@ -15,7 +15,7 @@ int main(void){
     int opcaoAM;
     int opcaoAF;
  	float distancia;
-	float distanciaMinima = 3.0; //centimetros de distancia entre o portao e a parede, de acordo com o tamanho do veículo.
+	float distanciaMinima = 3.0; //centimetros de distancia entre o portao e a parede, de acordo com o tamanho do veÃ­culo.
 
     printf("Voce deseja abrir o portao manualmente ou usando seus recursos automatizados?\nPRESS 1 FOR (MANUALMENTE) | 2 FOR (AUTOMATICO): ");
     scanf("%d", &opcaoAM);
