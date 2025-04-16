@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+	typedef struct Automovel{
+		char placa[10];
+		char modelo[20];
+		int ano;
+		char cor[20];
+		int renavam;
+		int i;
+	} DadosCarro;
+	
+	DadosCarro carro1;
+	strcpy(carro1.placa, "OPJ8345");
+	strcpy(carro1.modelo, "Nissan Skyline");
+	carro1.ano = 2000;
+	strcpy(carro1.cor, "Azul");
+	carro1.renavam = 2000432;
+	
+	printf("Dados informados CARRO 1:\n");
+	printf("Placa do carro: %s\n", carro1.placa);
+	printf("Modelo do carro: %s\n", carro1.modelo);
+	printf("Ano de fabricacao: %d\n", carro1.ano);
+	printf("Cor do carro: %s\n", carro1.cor);
+	printf("RENAVAM: %d\n", carro1.renavam);
+	
+	DadosCarro carro2;
+	printf("\nInforme o RENAVAM: ");
+	scanf("%d", &carro2.renavam);
+	printf("Placa do carro: ");
+	fflush(stdin); //limpa o endereco de entrada 
+	gets(carro2.placa);
+	printf("Modelo do carro: ");
+	fflush(stdin);
+	gets(carro2.modelo);
+	printf("Ano de fabricacao: ");
+	scanf("%d", &carro2.ano);
+	printf("Cor do carro: ");
+	fflush(stdin);
+	gets(carro2.cor);
+	
+	printf("\nDados informados CARRO 2:\n");
+	printf("Placa do carro: %s\n", carro2.placa);
+	printf("Modelo do carro: %s\n", carro2.modelo);
+	printf("Ano de fabricacao: %d\n", carro2.ano);
+	printf("Cor do carro: %s\n", carro2.cor);
+	printf("RENAVAM: %d\n", carro2.renavam);
+	
+	for(int i = 0; i<30;i++){
+		printf("=-");
+	}
+	printf("\nDados dos dois carros:\n");
+	printf("Carro 1:\n");
+	printf("\tRenavam: %d\n\tPlaca: %s\n\tModelo: %s\n\tCor: %s\n\tAno: %d\n", carro1.renavam, carro1.placa, carro1.modelo, carro1.cor, carro1.ano);
+	printf("\nCarro 2:\n");
+	printf("\tRenavam: %d\n\tPlaca: %s\n\tModelo: %s\n\tCor: %s\n\tAno: %d\n", carro2.renavam, carro2.placa, carro2.modelo, carro2.cor, carro2.ano);
+	printf("\nDados finalizados.\n");
+	for(int i = 0; i<30;i++){
+		printf("=-");
+	}
+	
+	
+	return 0;
+}
